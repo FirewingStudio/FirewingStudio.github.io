@@ -1,0 +1,147 @@
+/*
+   common.css
+   <project>
+   
+   Created by wucj on 2018-05-16.
+   https://segmentfault.com/u/shouzijiangs
+   Copyright 2018 wucj. All rights reserved.
+*/
+*{outline: none; font-family: 'Hiragino Sans GB','Microsoft YaHei';}
+
+#LTTopNav {
+    z-index: 4;
+    position: absolute;
+    width: 100%;
+    min-width: 1200px;
+}
+
+.icon{ background: url(./icon.png) no-repeat; display: inline-block;}
+
+/*基础布局*/
+.layout{ position: relative; overflow: hidden; min-width: 1200px;}
+.center{ width: 1200px; margin: 0 auto; position: relative;}
+/*绝对定位居中*/
+.centering{ position: absolute; width: 1920px; left: 50%; top: 0; margin-left: -960px;}
+
+.nav{}
+/*导航*/
+.nav_top{ position: absolute; left: 0; top: 0; right: 0; z-index: 30; border-bottom: 1px solid #463d3c; height: 79px; background: url(../images/nav.png) left top repeat-x;}
+.nav_top .logo{ width: 127px;height: 50px;  margin: 14px 22px 0 0;}
+.nav_top .logo img{
+    height: 50px;
+    width: 127px;
+    display: block;
+}
+
+
+.nav_top .cont{ position: relative; }
+.nav_top .cont ul{ height: 79px; line-height: 79px;}
+.nav_top .cont li{ float: left; width: 90px; margin-right: 20px; text-align: center;}
+.nav_top .cont li a{ color: #a8a8a9; display: block;}
+.nav_top .cont li.active a{ color: #ffffff;}
+.nav_top .cont li a:hover{ color: #ffffff;}
+.nav_top .cont i{ position: absolute; width: 90px; height: 3px; background: #12a7eb; bottom: 0; left: 0;}
+.nav_top .language{ width: 66px; height: 26px; line-height: 26px; border: 1px solid #878a8c; border-radius: 15px; text-align: center; color: #a8a8a9; margin: 25px 10px 0 0;}
+.nav_top .language:hover{ color: #fff;}
+
+/*导航更多*/
+.nav_more{ position: absolute; left: 0; top: 0; right: 0; z-index: 29; background: rgba(0,0,0,.8); opacity: 0;}
+.nav_more .cont{ padding:80px 0 0 149px; }
+.nav_more .cont a{ color: #e0e0e0;}
+.nav_more .cont a i{display: inline-block; width: 11px; height: 11px; margin-right: 6px;}
+.nav_more .cont a i.hot,
+.nav_more .cont a i.new{ background: url(./icon.png) no-repeat;}
+.nav_more .cont a i.new{ background-position: -15px 0;}
+.nav_more .cont ul{}
+.nav_more .cont ul li{ height: 38px; line-height: 38px; text-align: center;}
+.nav_more .cont ul li a:hover{ color: #ffffff;}
+.nav_more .cont .ul_com{ float: left; width: 90px; margin-right: 20px; padding-top: 1px; padding-bottom:26px;}
+.nav_more .cont .ul_com_game{ width: auto; }
+.nav_more .cont .ul_com_game ul{ float: left; width: auto; margin-right: 16px;}
+.nav_more .cont .ul_com_game ul li{ text-align: left;}
+.nav_more .cont .language{ float: right; margin: 0;border-left: 1px solid #34363c;height: 190px;}
+
+/*底部版权调整*/
+.footer {background-color: #282f3e; color: #fff;}
+.footer p{ color: #fff;}
+.footer .f_txt p a{ color: #fff;}
+
+.assistant_pop{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: .75;
+    filter: alpha(opacity=75);
+    z-index: 8000;
+    display: none;
+}
+.assistant_leiting {
+    width: 386px;
+    height: 280px;
+    background: #fdfdfd;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -140px 0 0 -193px;
+    z-index: 9999;
+    display: none;
+}
+.assistant_leiting .assistant_close{
+    width: 48px;
+    height: 45px;
+    background: url(/resource/terrace/images/index/sprite.png) -386px -630px no-repeat;
+    position: absolute;
+    top: 0;
+    right: -60px;
+    text-indent: -999em;
+}
+.assistant_leiting h3{
+    height: 46px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 46px;
+    font-size: 16px;
+    color: #2b6ac9;
+    font-weight: 100;
+}
+.assistant_leiting p {
+    font-size: 12px;
+    line-height: 20px;
+    width: 80%;
+    margin: 15px auto;
+}
+.assistant_leiting img{
+    width: 116px;
+    height: 116px;
+    position: absolute;
+    top: 120px;
+    left: 37px;
+}
+.assistant_ios{
+    width: 176px;
+    height: 53px;
+    background: url(/resource/terrace/images/index/sprite.png) -8px -623px no-repeat;
+    position: absolute;
+    top: 121px;
+    left: 171px;
+    text-indent: -999em;
+}
+.assistant_ios:hover{
+    background: url(/resource/terrace/images/index/sprite.png) -8px -683px no-repeat;
+}
+.assistant_android{
+    width: 176px;
+    height: 53px;
+    background: url(/resource/terrace/images/index/sprite.png) -197px -625px no-repeat;
+    position: absolute;
+    top: 183px;
+    left: 171px;
+    text-indent: -999em;
+}
+.assistant_android:hover{
+    background: url(/resource/terrace/images/index/sprite.png) -197px -684px no-repeat;
+}
