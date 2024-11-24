@@ -1,187 +1,131 @@
 <!DOCTYPE html>
-<html lang="zh-CN" style="font-size: 73px;">
+<html data-dpr="1" style="font-size: 100px;">
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta name="robots" content="all">
-    <title>火翼工作室</title>
-    <meta name="Description" content="《古域道影》是全新竖屏黑神话冒险手游,历经三年打磨,只为带来纯粹、感动和轻松的冒险体验。">
-    <meta name="Keywords" content="古域道影,黑神话,Roguelike,古域冒险,道影再临,启·David,启·大卫,潘·Irene,潘·伊琳娜,火翼工作室">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta name="renderer" content="webkit">
+    <title>《古域道影》Google Play 内部测试 - 火翼游戏平台 - 游戏发烧友的聚集地！</title>
+    <meta name="Description" content="《古域道影》登陆Google Play，公测开始！">
+    <meta name="Keywords" content="火翼游戏平台,火翼游戏,firewingstudio,火翼游戏厅,火翼游戏手游,火翼游戏官网,火翼游戏官方,火翼游戏礼包">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Cache-Control" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <link rel="icon" href="./res/favicon.ico">
-    <link rel="stylesheet" href="./res/p_base.css">
-    <link href="./res/home_index_pc_v2.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../moban_files/m_swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../moban_files/common.css">
+    <link rel="stylesheet" type="text/css" href="../moban_files/style.css">
+    <link rel="stylesheet" type="text/css" href="../moban_files/game_detail_v2.css">
+    <link rel="icon" href="../moban_files/favicon.ico">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../moban_files/ltLogin.min.css">
 </head>
 
-<body id="homePage" data="prod">
-    <div class="wrapper">
-        <!--[if lt IE 10]>
-        <div style="position:relative;width:100%;height:50px;background:red;color:#fff;border-bottom:1px
-        solid #fff;text-align:center;line-height:50px;font-size:16px;z-index: 9999">
-            亲，您的浏览器过于陈旧，无法呈现HTML5完美效果，建议您升级您的浏览器。
-        </div>
-        <![endif]-->
-        <div class="content">
-            <style>
-                :root {
-                    --modalCloseBtnBgImg: url('./res/17113586439895269322342.png');
-                    --ballBulletBgColor: ;
-                }
-            </style>
-            <style>
-                :root {
-                    --defaultHeader_BgColor: rgba(255, 255, 255, 1);
-                    --defaultHeader_TitleColor: rgba(230, 138, 35);
-                    --defaultHeader_DesColor: rgba(70, 58, 52);
-                    --defaultHeader_NavColor: rgba(70, 58, 52);
-                    --defaultHeader_NavActiveColor: rgba(230, 138, 35);
-                    --sideBar_textColor: rgba(70, 58, 52);
-                    --newsPage_BulletColor: rgba(230, 138, 35);
-                    --newsPage_BulletActiveColor: rgba(70, 58, 52);
-                    --newsPage_NavColor: rgba(94, 80, 74);
-                    --newsPage_NavActiveColor: rgba(223, 125, 54);
-                    --newsPage_TopNewsColor: rgba(94, 80, 74);
-                    --newsPage_MoreBtnColor: rgba(251, 248, 239);
-                    --newsPage_MoreBtnBgColor: rgba(191, 173, 152, 1);
-                    --newsPage_LineColor: rgba(94, 80, 74);
-                    --newsPage_NewsTitleColor: rgba(94, 80, 74);
-                    --newsPage_NewsTimeColor: rgba(94, 80, 74);
-                    --featurePage_BulletColor: rgba(255, 255, 255);
-                    --featurePage_BulletActiveColor: rgba(174, 196, 185);
-                }
-            </style>
-
-            <!-- <div class="page home-page page1" id="homePage">
-                <div class="bg-wrap">
-                    <div class="img-wrap">
-                        <img class="bg" src="./res/bg_1920_1024.png">
-                    </div>
-                </div>
-                <div class="slogan-wrap"
-                    style="top:6.85rem;left:2.6rem;width:13.94rem;height:4.19rem;background-image: url(&#39;./res/17113583089895269326308.png&#39;)">
-                </div>
-                <a id="hp_videoBtn" class="btn btn-video" href="javascript:;" role="button"
-                    style="top:7.66rem;left:14.78rem;width:1.51rem;height:1.38rem;background-image: url(&#39;./res/17113583449895269324511.png&#39;)"></a>
-                <a class="btn btn-sub hp_btn type-download" href="javascript:;" data="0" role="button"
-                    style="width:2.84rem;height:0.86rem;top:5.89rem;left:8.18rem;background-image: url(&#39;./res/download.png&#39;)"></a>
-                <a class="btn btn-sub hp_btn type-download" href="javascript:;" data="1" role="button"
-                    style="width:2.84rem;height:0.86rem;top:5.89rem;left:8.18rem;background-image: url(&#39;./res/download_2.png&#39;)"></a>
-                <a class="btn btn-sub hp_btn type-href" href="javascript:;" data="2" role="button"
-                    style="width:2.13rem;height:2.07rem;top:6.5rem;left:0rem;background-image: url(&#39;./res/171202898419030916807720.png&#39;)"></a>
-                <div class="move-tip">
-                    <img src="./res/17113583909895269327147.png">
-                </div>
-            </div> -->
-
-            <div class="sub-page">
-                <div class="bg-wrap">
-                    <img src="./res/bg_1920_1080.png"><img src="./res/bg_1920_1200.jpg">
-                </div>
-                <div class="sub-page-con" style="width: 100%;color: #ffffff;">
-                    <div class="page news-page" id="newsPage">
-                        <h2 class="title">
-                            <!-- <img src="./res/17113585789895269321482.png"> -->
-                        </h2>
-                        <div class="news-page-con">
-                            <div style="width: 100%;align-content: start;padding-left: 0.5rem;">
-                                <div style="font-size: 26px;">
-                                    Welcome, we are a cool
-                                </div>
-                                <div style="font-size: 120px;">
-                                    Firewings<br>
-                                    Game<br>
-                                    Studio
-                                </div>
-                            </div>
+<body>
+    <div class="warp">
+        <!-- 顶部通栏 -->
+        <div class="header">
+            <div class="head_box">
+                <div class="head clearfix">
+                    <a href="https://firewingstudio.github.io/" class="fl logo" target="_blank">
+                        <img src="../moban_files/lt_logo_dark.png" alt="火翼游戏平台" class="dis_b" width="100%">
+                    </a>
+                    <div class="pr fr d_flex">
+                        <div class="dis_i main_menu">
                         </div>
-                    </div>
-                    <div class="page feature-page" id="featurePage">
-                        <h2 class="title" style="font-size: 60px;">
-                            <!-- <img src="./res/17113585929895269321918.png"> -->
-                            Our Game Projects
-                        </h2>
-                        <div id="LT_age" class="LT-age" style="top:11.66rem;left:12.28rem;"><a href="./thetao"><img src="./res/17113583449895269324511.png"
-                            style="width:1.6rem;"></a></div>
-                        <div id="fpSwiper" class="swiper-wrap type2" style="place-items: center;color: #ffffff;">
-                            <div style="width: 486px;height: 238px;background-size: cover;background-image: url('./res/cover.jpg');display: flex;
-  align-items: flex-end;">
-                                <div style="padding: 20px;">
-                                    <div style="line-height:18.5px;font-size: 14px;color: #fd307a;">
-                                        Roguelike Game is coming soon
-                                    </div>
-                                    <div style="line-height:37.5px;font-size: 33px;">
-                                        AncientTaoShadow
-                                    </div>
-                                    <div style="line-height:20.5px;font-size: 16px;color: #ffffffad;">
-                                        Ancient Domain Daoying Shenxing, Rogue upgrade to fight Guai.
-                                        A fun and exciting multi-character long-distance adventure!
-                                    </div>
-                                </div>
-                            </div>
-                            <div style="height: 20px;"></div>
-                            <div style="width: 486px;height: 212px;background-size: cover;background-image: url('./res/cover_ruda.jpg');display: flex;
-  align-items: flex-end;">
-                                <div style="padding: 20px;">
-                                    <div style="line-height:18.5px;font-size: 14px;color: #fd307a;">
-                                        PC ARPG game under development
-                                    </div>
-                                    <div style="line-height:37.5px;font-size: 33px;">
-                                        AncientTaoShadow-Ruda
-                                    </div>
-                                    <div style="line-height:20.5px;font-size: 16px;color: #ffffffad;">
-                                        Suddenly the golden rope was opened and the jade lock was torn off.
-                                        Hey! The tide came from the Qiantang River, and today I know who I am.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="page player-page" id="playerPage">
-                        <div class="server-wrap">
-                            <ul id="fp_ServerList" class="server-list">
-                                <li class="item">
-                                    <img src="./res/share_ins.png">
-                                </li>
-                                <li class="item">
-                                    <img src="./res/share_fb.png">
-                                </li>
-                                <li class="item">
-                                    <img src="./res/share_x.png">
-                                </li>
-                                <li class="item">
-                                    <img src="./res/share_yt.png">
-                                </li>
-                            </ul>
+                        <a href="javascript:;" class="dis_i head_search">
+                        </a>
+
+                        <!-- 搜索 -->
+                        <div class="pa search_input">
+                            <input type="text" placeholder="请输入游戏名称" class="dis_i" value="">
+                            <a href="javascript:;" class="dis_i btn_search">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="./res/jquery.js"></script>
-        <script src="./thetao/moban_files/data.js"></script>
 
-        <script>
-            if (document.getElementsByTagName('body')[0].getAttribute('data') === 'dev') {
-                var ENV = 'mock'
-            } else {
-                var ENV = 'prod'
-            }
-        </script>
+        <!-- 文章详情 -->
+        <div class="article_details">
+            <div class="article_bread">
+                <a href="https://firewingstudio.github.io/" target="_blank">首页</a><span>&gt;</span>
+                <a href="../" target="_blank">古域道影</a><span>&gt;</span>正文
+            </div>
+            <h3>《古域道影》Google Play 内部测试</h3>
+            <p class="article_name">
+                <i class="dis_i"><img src="../moban_files/icon_product.png" class="dis_b" width="100%"></i>
+                <span class="dis_i">《古域道影》</span>
+                <i class="dis_i"><img src="../moban_files/icon_time.png" class="dis_b" width="100%"></i>
+                <span class="dis_i">2024-10-23 10:49:23</span>
+            </p>
+            <div class="article_details_content">
+                <p style="margin-left:0pt; margin-right:0pt; text-align:left"><span style="line-height:2"><span
+                            style="font-size:14px"><span
+                                style="font-family:Arial,Helvetica,sans-serif">为了12月，手游《古域道影》上线Google Play。现征求广大用户内测，名额100.</span></span></span></p>
+                
+                <p style="margin-left:0pt; margin-right:0pt; text-align:left"><span style="line-height:2"><span
+                    style="font-size:18px"><span
+                        style="font-family:Arial,Helvetica,sans-serif">申请内测的用户需把<b>Google账号</b>发送至<b>firewings.t@gmail.com</b>并注明申请内测</span></span></span></p>
 
-        <script>
-            this.config = { list: d_share, btn: { bigList: d_download, smallList: d_share} };
-            var e = this;
-            $("#fp_ServerList .item").on("click", function () {
-                var t = $(this).index(), t = e.config.list[t]; "href" === t.type && window.open(t.href);
-            });
-        </script>
+                <p style="margin-left:0pt; margin-right:0pt; text-align:left"><span style="line-height:2"><span
+                            style="font-size:14px"><span
+                                style="font-family:Arial,Helvetica,sans-serif">该作耗时近2年，由火翼工作室原创IP，火翼游戏独立发行。研发团队为个人工作室。玩家能够在游戏中感受《古域道影》IP下的世界观设定，进行深度的剧情冒险与肉鸽战斗。</span></span></span>
+                </p>
 
+                <p>&nbsp;</p>
+
+                <p style="text-align:center"><img alt="《古域道影》" src="../moban_files/2K_2.jpg"
+                        style="height: auto; width: 300px;" title="《古域道影》" img-num="0"></p>
+
+                <p>&nbsp;</p>
+
+                <p style="text-align:center"><img alt="《古域道影》" src="../moban_files/2K_5.jpg"
+                        style="height: auto; width: 300px;" title="《古域道影》" img-num="1"></p>
+
+                <p>&nbsp;</p>
+
+                <p style="margin-left:0pt; margin-right:0pt; text-align:left"><span style="line-height:2"><span
+                            style="font-size:14px"><span
+                                style="font-family:Arial,Helvetica,sans-serif">历经两年的等待，火翼工作室为这款原创IP手游贡献了浓厚的热情与精致的设计。</span></span></span>
+                </p>
+
+                <p style="margin-left:0pt; margin-right:0pt; text-align:left">&nbsp;</p>
+
+                <p style="margin-left:0pt; margin-right:0pt; text-align:center"><span style="line-height:2"><span
+                            style="font-size:14px"><span style="font-family:Arial,Helvetica,sans-serif"><img
+                                    alt="《古域道影》" src="../moban_files/2K_6.jpg"
+                                    style="width: 300px; height: auto;" title="《古域道影》" img-num="2"></span></span></span>
+                </p>
+
+                <p style="margin-left:0pt; margin-right:0pt; text-align:left">&nbsp;</p>
+            </div>
+            <div class="pr article_down er">
+                <a class="article_down_con" href="../" target="_blank">
+                    <img src="../moban_files/onepiece_icon.png" class="pa article_down_icon" alt="古域道影" title="古域道影">
+                    <p class="pa article_down_name">
+                        <span class="dis_b">古域道影</span>
+                        <em class="dis_b">原创黑神话 · 全新竖屏肉鸽手游
+                        </em>
+                    </p>
+                </a>
+                <a href="../download" class="pa article_down_btn">下载游戏</a>
+                <div class="pa down_code">
+                    <div id="qrcode_d" title="../download">
+                        <svg viewBox="0 0 29 29" width="100%" height="100%" fill="#FFFFFF" xmlns="http://www.w3.org/2000/svg"><rect fill="#FFFFFF" width="100%" height="100%"></rect><path d="M0 0v1h7v-1zM8 0v1h1v-1zM11 0v1h3v-1zM18 0v1h1v-1zM20 0v1h1v-1zM22 0v1h7v-1zM0 1v1h1v-1zM6 1v1h1v-1zM9 1v1h2v-1zM13 1v1h1v-1zM16 1v1h2v-1zM19 1v1h1v-1zM22 1v1h1v-1zM28 1v1h1v-1zM0 2v1h1v-1zM2 2v1h3v-1zM6 2v1h1v-1zM10 2v1h1v-1zM12 2v1h2v-1zM15 2v1h1v-1zM18 2v1h1v-1zM20 2v1h1v-1zM22 2v1h1v-1zM24 2v1h3v-1zM28 2v1h1v-1zM0 3v1h1v-1zM2 3v1h3v-1zM6 3v1h1v-1zM12 3v1h2v-1zM16 3v1h2v-1zM19 3v1h2v-1zM22 3v1h1v-1zM24 3v1h3v-1zM28 3v1h1v-1zM0 4v1h1v-1zM2 4v1h3v-1zM6 4v1h1v-1zM9 4v1h1v-1zM11 4v1h1v-1zM14 4v1h1v-1zM16 4v1h4v-1zM22 4v1h1v-1zM24 4v1h3v-1zM28 4v1h1v-1zM0 5v1h1v-1zM6 5v1h1v-1zM10 5v1h1v-1zM12 5v1h1v-1zM16 5v1h1v-1zM20 5v1h1v-1zM22 5v1h1v-1zM28 5v1h1v-1zM0 6v1h7v-1zM8 6v1h1v-1zM10 6v1h1v-1zM12 6v1h1v-1zM14 6v1h1v-1zM16 6v1h1v-1zM18 6v1h1v-1zM20 6v1h1v-1zM22 6v1h7v-1zM8 7v1h1v-1zM10 7v1h2v-1zM13 7v1h1v-1zM19 7v1h2v-1zM0 8v1h2v-1zM3 8v1h2v-1zM6 8v1h1v-1zM9 8v1h4v-1zM14 8v1h1v-1zM16 8v1h2v-1zM22 8v1h1v-1zM28 8v1h1v-1zM0 9v1h6v-1zM8 9v1h2v-1zM12 9v1h4v-1zM17 9v1h3v-1zM21 9v1h1v-1zM23 9v1h2v-1zM26 9v1h2v-1zM0 10v1h3v-1zM5 10v1h3v-1zM10 10v1h4v-1zM15 10v1h1v-1zM17 10v1h2v-1zM20 10v1h1v-1zM24 10v1h1v-1zM26 10v1h1v-1zM4 11v1h1v-1zM7 11v1h1v-1zM9 11v1h3v-1zM14 11v1h1v-1zM17 11v1h1v-1zM20 11v1h2v-1zM24 11v1h2v-1zM28 11v1h1v-1zM0 12v1h2v-1zM4 12v1h1v-1zM6 12v1h1v-1zM9 12v1h1v-1zM11 12v1h2v-1zM14 12v1h2v-1zM19 12v1h2v-1zM22 12v1h2v-1zM28 12v1h1v-1zM1 13v1h1v-1zM4 13v1h1v-1zM7 13v1h1v-1zM11 13v1h1v-1zM14 13v1h3v-1zM22 13v1h7v-1zM2 14v1h1v-1zM4 14v1h1v-1zM6 14v1h1v-1zM9 14v1h1v-1zM14 14v1h2v-1zM19 14v1h3v-1zM26 14v1h1v-1zM28 14v1h1v-1zM0 15v1h2v-1zM3 15v1h1v-1zM9 15v1h1v-1zM12 15v1h1v-1zM15 15v1h1v-1zM18 15v1h1v-1zM21 15v1h2v-1zM24 15v1h1v-1zM26 15v1h1v-1zM28 15v1h1v-1zM1 16v1h1v-1zM3 16v1h1v-1zM5 16v1h2v-1zM8 16v1h6v-1zM25 16v1h1v-1zM0 17v1h5v-1zM8 17v1h1v-1zM10 17v1h1v-1zM15 17v1h2v-1zM18 17v1h3v-1zM24 17v1h1v-1zM26 17v1h2v-1zM0 18v1h4v-1zM6 18v1h1v-1zM10 18v1h2v-1zM13 18v1h1v-1zM15 18v1h1v-1zM17 18v1h4v-1zM24 18v1h2v-1zM28 18v1h1v-1zM0 19v1h2v-1zM4 19v1h1v-1zM7 19v1h3v-1zM11 19v1h1v-1zM13 19v1h4v-1zM18 19v1h2v-1zM22 19v1h1v-1zM25 19v1h2v-1zM0 20v1h3v-1zM4 20v1h3v-1zM9 20v1h1v-1zM11 20v1h2v-1zM14 20v1h1v-1zM16 20v1h2v-1zM19 20v1h9v-1zM8 21v1h1v-1zM10 21v1h2v-1zM13 21v1h3v-1zM19 21v1h2v-1zM24 21v1h2v-1zM0 22v1h7v-1zM9 22v1h5v-1zM15 22v1h3v-1zM19 22v1h2v-1zM22 22v1h1v-1zM24 22v1h2v-1zM0 23v1h1v-1zM6 23v1h1v-1zM11 23v1h1v-1zM14 23v1h1v-1zM16 23v1h2v-1zM19 23v1h2v-1zM24 23v1h1v-1zM28 23v1h1v-1zM0 24v1h1v-1zM2 24v1h3v-1zM6 24v1h1v-1zM8 24v1h2v-1zM12 24v1h1v-1zM16 24v1h1v-1zM19 24v1h7v-1zM27 24v1h2v-1zM0 25v1h1v-1zM2 25v1h3v-1zM6 25v1h1v-1zM8 25v1h4v-1zM13 25v1h1v-1zM15 25v1h2v-1zM18 25v1h1v-1zM21 25v1h1v-1zM27 25v1h2v-1zM0 26v1h1v-1zM2 26v1h3v-1zM6 26v1h1v-1zM9 26v1h1v-1zM12 26v1h1v-1zM14 26v1h6v-1zM21 26v1h1v-1zM23 26v1h2v-1zM26 26v1h3v-1zM0 27v1h1v-1zM6 27v1h1v-1zM8 27v1h1v-1zM10 27v1h2v-1zM15 27v1h1v-1zM18 27v1h2v-1zM21 27v1h2v-1zM25 27v1h2v-1zM28 27v1h1v-1zM0 28v1h7v-1zM8 28v1h2v-1zM12 28v1h2v-1zM18 28v1h3v-1zM22 28v1h1v-1zM24 28v1h1v-1z" fill="#000000"></path></svg>
+                    </div>
+                    <p>扫码下载</p>
+                </div>
+
+            </div>
+            <!-- 引导用户添加至手机桌面 -->
+            <div class="guide_user guide_user_android hid">
+                <p class="guide_user_p">
+                    <span>怎么快速找到这里？</span><br>
+                    <em>通过手机浏览器收藏该页面，或添加至手机桌面即可。</em>
+                </p>
+            </div>
+        </div>
+        <a href="javascript:;" class="return_top" title="返回顶部">返回顶部</a>
+        <div class="seat"></div>
+        <!-- 底部版权 -->
         <div id="LT_footer" class="footer-wrapper" data-type="pc">
             <style>
                 .LT-footer {
@@ -562,17 +506,13 @@
                 <div class="f-wrap">
                     <div class="f-top">
                         <div class="f-t-l"><a class="f-item" target="_blank" href="https://firewingstudio.github.io/">
-                                <img src="./res/lt_logo_w.png" alt="火翼工作室"> </a>
+                                <img src="../moban_files/lt_logo_w.png" alt="火翼工作室"> </a>
                         </div>
                         <nav class="f-t-r">
-                            <a class="f-a" target="_blank"
-                                href="https://firewingstudio.github.io/privacy-policy.html">隐私政策</a>
-                            <a class="f-a" target="_blank"
-                                href="https://firewingstudio.github.io/license-ua.html">用户协议</a>
-                            <a class="f-a" target="_blank"
-                                href="https://firewingstudio.github.io/anti-addiction.html">防沉迷自律公约</a>
-                            <a class="f-a" target="_blank"
-                                href="https://firewingstudio.github.io/permissions.html">应用权限</a>
+                            <a class="f-a" target="_blank" href="https://firewingstudio.github.io/privacy-policy.html">隐私政策</a>
+                            <a class="f-a" target="_blank" href="https://firewingstudio.github.io/license-ua.html">用户协议</a>
+                            <a class="f-a" target="_blank" href="https://firewingstudio.github.io/anti-addiction.html">防沉迷自律公约</a>
+                            <a class="f-a" target="_blank" href="https://firewingstudio.github.io/permissions.html">应用权限</a>
                         </nav>
                     </div>
                     <div class="f-center">
@@ -590,19 +530,7 @@
                 </div>
             </div>
         </div>
-        <div id="videoModal" class="modal video-modal modal-hide" style="display: none; animation-duration: 300ms;">
-            <div class="modal-wrapper" style="animation-duration: 300ms;">
-                <a class="btn-close" href="javascript:;" data="close" role="button"></a>
-                <div class="modal-body">
-                    <video src="" data-src="" id="mainVideo" controls="" preload="auto" x5-video-player-type="h5"
-                        x5-video-orientation="portrait" x5-video-player-fullscreen="true" x-webkit-airplay="true"
-                        webkit-playsinline="true" x5-playsinline="true" playsinline="true"></video>
-                </div>
-            </div>
-        </div>
-
-        <div id="LT_age" class="LT-age" style="top:0.3rem;left:0.3rem;"><img src="./res/lt_logo_w.png"
-                style="width:2rem;"></div>
+    </div>
 </body>
 
 </html>

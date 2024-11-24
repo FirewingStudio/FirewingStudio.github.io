@@ -1,0 +1,1003 @@
+.arrondis_banner{
+	width: 100%;
+	height: 132.5px;
+}
+.arrondis_banner .arrondis_img{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	overflow: hidden;
+}
+.arrondis_banner .arrondis_img img{
+	width: 100%;
+	height: 132.5px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	filter: blur(6px);
+}
+.arrondis_banner .arrondis_img .arrondis_mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.55);
+	top: 0;
+	left: 0;
+}
+.arrondis_banner .arrondis_box{
+    width: 100%;
+    max-width: 1125px;
+    height: 100%;
+    margin: 0 auto;
+}
+.arrondis_icon{
+	width: 56px;
+    top: 25px;
+    left: 20px;
+}
+.arrondis_gamename {
+    top: 21px;
+    left: 88px;
+    width: 40%;
+}
+.arrondis_gamename b{
+	width: 100%;
+	font-size: 20px;
+	line-height: 30px;
+	color: #fff;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.arrondis_gamename em,
+.arrondis_gamename dfn{
+	width: 100%;
+	font-size: 10px;
+	line-height: 17px;
+	color: #a5aca6;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.arrondis_gamename dfn i{
+	color: #fff;
+	padding: 0 2px;
+}
+.arrondis_box .op_wrap,
+.introduce_box .op_wrap {
+    position: absolute;
+    right: 20px;
+    width: 105px;
+    font-size: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+
+.arrondis_box .op_wrap {
+    height: calc(100% - 22px);
+}
+
+.introduce_box .op_wrap {
+    height: 100%;
+}
+
+.arrondis_btn{
+    display: block;
+	width: 100%;
+    height: 22px;
+    text-align: center;
+    line-height: 22px;
+	background: #5338ee;
+	color: #fff;
+	font-size: 12px;
+}
+.arrondis_btn + .arrondis_btn {
+    margin-top: 12px;
+}
+.com_baffle{
+	width: 100%;
+	height: 22px;
+	bottom: -1px;
+	left: 0;
+	font-size: 0;
+}
+.com_baffle .baffle{
+	width: 40.5%;
+	height: 22px;
+	background: #fff;
+}
+.com_baffle .baffle_btn{
+	width: 19%;
+	height: 22px;
+	background: url(../images/icon_arrow_down.png) center top no-repeat;
+	background-size: 20px 13px;
+}
+.arrondis_plate{
+	width: 100%;
+    height: 115px;
+    max-width: 1090px;
+	margin: 0 auto;
+    border-bottom: 3px solid #f3f3f3;
+    background: #fff;
+    font-size: 0;
+    transition: all .5s;
+}
+.arrondis_plate .arrondis_plates_scroll .swiper-slide{
+	width: auto;
+}
+.arrondis_plate a{
+	width: 60px;
+	height: 75px;
+	margin: 20px 0 20px 20px;
+	transition: all .5s;
+}
+.arrondis_plate a img{
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+.arrondis_plate a span{
+	width: 100%;
+    display: block;
+    text-align: center;
+    line-height: 26px;
+    color: #737373;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.arrondis_tab{
+	width: 100%;
+	max-width: 1090px;
+	font-size: 0;
+	margin: 0 auto;
+}
+.arrondis_tab a{
+	width: 35px;
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	color: #a3a3a3;
+	margin:0 10px 0 20px;
+	transition: all .3s;
+}
+.arrondis_tab a::before{
+	content: '';
+	width: 0%;
+	height: 5px;
+	background: #573dea;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	transition: all .3s;
+}
+.arrondis_tab a.active{
+	color: #000;
+}
+.arrondis_tab a.active::before{
+	width: 100%;
+}
+.arrondis_content{
+	width: 100%;
+	max-width: 1090px;
+	margin: 0 auto;
+}
+.information_list a{
+	width: 100%;
+	height: 91px;
+	border-top: 1px solid #ededed;
+	overflow: hidden;
+	font-size: 0;
+}
+.information_list a:nth-child(1){
+	border-top:none;
+}
+.information_list a:nth-child(n+6){
+	/*display: none;*/
+}
+.information_list a img{
+	width: 120px;
+	margin: 16px 13px 16px 20px;
+}
+.information_list a span{
+	width: calc(100% - 20px - 120px - 20px - 13px);
+	height: 60px;
+}
+.information_list a span i{
+	color: #000;
+	font-size: 13px;
+	line-height: 20px;
+}
+.information_list a span dfn{
+	display: block;
+	height: 15px;
+	line-height: 15px;
+	color: #a3a3a3;
+	font-size: 12px;
+	margin-top: 5px;
+	text-align: right;
+}
+.arrondis_novice{
+	width: 100%;
+	max-width: 1125px;
+	margin: 0 auto;
+	height: 140px;
+}
+.arrondis_novice .arrondis_novice_title,
+.arrondis_use .arrondis_use_title,
+.arrondis_advanced .arrondis_advanced_title{
+	font-size: 18px;
+	color: #000;
+	line-height: 46px;
+	margin-left: 20px;
+}
+.arrondis_novice .arrondis_novice_box{
+	width: 100%;
+}
+.arrondis_novice .arrondis_novice_box .arrondis_novice_scroll .swiper-slide{
+	width: auto;
+	font-size: 0;
+}
+.arrondis_novice .arrondis_novice_box .arrondis_novice_scroll .swiper-slide a{
+	width: 135px;
+	height: auto;
+	margin-left: 10px;
+}
+.arrondis_novice .arrondis_novice_box .arrondis_novice_scroll .swiper-slide a:nth-child(1){
+	margin-left: 20px;
+}
+.arrondis_use,
+.arrondis_advanced{
+	width: 100%;
+	max-width: 1125px;
+	height: auto;
+	font-size: 0;
+}
+.arrondis_use_box,
+.arrondis_advanced_box{
+	width: calc(100% - 40px);
+	margin: 0 auto;
+}
+.arrondis_use_box a{
+	width: 25.4%;
+	height: 30px;
+	background: #f3f3f3;
+	padding: 0 2.95%;
+	text-align: center;
+	line-height: 30px;
+	color: #595959;
+	font-size: 12px;
+	margin:0 2.95% 2.95% 0;
+	position: relative;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.arrondis_use_box a i{
+	width: 50px;
+	height: 13px;
+	background: #6348ff;
+	text-align: center;
+	line-height: 13px;
+	color: #fff;
+	font-size: 8px;
+	position: absolute;
+	top: 4px;
+	left: -16px;
+	transform:rotate(-45deg);
+	display: none;
+}
+.arrondis_use_box a.active i{
+	display: block;
+}
+.arrondis_advanced{
+	border-bottom: none;
+}
+.arrondis_advanced_box a{
+	width: 31%;
+	margin-right: 3.333333%;
+	margin-bottom: 3.333333%;
+	position: relative;
+	overflow: hidden;
+}
+.arrondis_advanced_box a span{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	background: rgba(38,36,78,.9);
+	color: #fff;
+	font-size: 11px;
+	text-indent: 10px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mask_introduce{
+	width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+}
+.pop_introduce{
+	width: 100%;
+	max-width: 960px;
+	height: auto;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 600;
+}
+.pop_introduce .introduce_box{
+	height: 100px;
+}
+.introduce_box .arrondis_gamename b{
+	color: #000;
+}
+.introduce_box .arrondis_gamename em,
+.introduce_box .arrondis_gamename dfn i{
+	color: #737373;
+}
+.introduce_gamedetails{
+	width: calc(100% - 40px);
+	max-height: 150px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	margin: 0 auto 15px;
+}
+.introduce_gamedetails p{
+	color: #737373;
+    font-size: 12px;
+    line-height: 21px;
+}
+.features_title,
+.introduce_close{
+	display: none;
+}
+.introduce_features{
+	width: calc(100% - 20px);
+	height: 145px;
+	margin-left: 20px;
+}
+.introduce_features .introduce_features_scroll .swiper-slide{
+	width: auto;
+	font-size: 0;
+}
+.introduce_features .introduce_features_scroll .swiper-slide img{
+	height: 100%;
+	margin-right: 13px;
+}
+.pop_introduce .swiper-scrollbar-features{
+	display: none;
+}
+.introduce_arrow{
+	height: 20px;
+	background: #fff;
+}
+.introduce_arrow .arrow_up{
+	width: 19%;
+    height: 22px;
+    background:#fff url(../images/icon_arrow_up.png) center top no-repeat;
+    background-size: 20px 13px;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes bounceInDown{
+	0%,60%,75%,90%,to {
+        animation-timing-function: cubic-bezier(.215,.61,.355,1);
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%,-3000px,0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(-50%,25px,0);
+    }
+    75% {
+        transform: translate3d(-50%,-10px,0);
+    }
+    90% {
+        transform: translate3d(-50%,5px,0);
+    }
+    to {
+        transform: translate3d(-50%,0,0);
+    }
+}
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+		transform: translate(-50%,-50%) scale(.3);
+	}
+	to{
+		opacity: 1;
+		transform: translate(-50%,-50%) scale(1);
+	}
+}
+/** qq群弹窗 **/
+.pop_arrondiqq{
+	width: 320px;
+	height: 300px;
+	background: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -160px;
+	z-index: 9999;
+	display: none;
+}
+.pop_arrondiqq .arrondiqq_scroll{
+	width: 88%;
+	height: 240px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -120px 0 0 -44%;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	font-size: 0;
+}
+.introduce_gamedetails::-webkit-scrollbar,
+.pop_arrondiqq .arrondiqq_scroll::-webkit-scrollbar{
+    width: 5px;
+    height: 5px;
+    background: #5338ee;
+}
+.introduce_gamedetails::-webkit-scrollbar-track,
+.pop_arrondiqq .arrondiqq_scroll::-webkit-scrollbar-track{
+    background: #fff;
+}
+.introduce_gamedetails::-webkit-scrollbar-thumb,
+.pop_arrondiqq .arrondiqq_scroll::-webkit-scrollbar-thumb{
+    height: 8px;
+    background:#5338ee;
+}
+.pop_arrondiqq .arrondiqq_scroll .qqgroup{
+	height: 28px;
+	margin-bottom: 15px;
+}
+.pop_arrondiqq .arrondiqq_scroll .qqgroup span{
+	width: 24%;
+	text-align: right;
+	color: #737373;
+	font-size: 16px;
+	line-height: 28px;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pop_arrondiqq .arrondiqq_scroll .qqgroup input{
+	width: 46%;
+	height: 28px;
+	color: #737373;
+	font-size: 16px;
+	border: 0;
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.pop_arrondiqq .arrondiqq_scroll .qqgroup a{
+	width: 23%;
+	height: 28px;
+	background: #5338ee;
+	text-align: center;
+	line-height: 28px;
+	color: #fff;
+	font-size: 16px;
+	margin-left: 1%;
+}
+/**iphone**/
+@media only screen and (max-width:767px) and (min-width:320px) {
+	.information_list a span i{
+		height: 40px;
+		display: -webkit-box !important;
+		overflow: hidden;
+		-webkit-text-overflow: ellipsis;
+		-moz-text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-o-box-orient: vertical;
+		-ms-box-orient: vertical;
+		box-orient: vertical;
+		-webkit-line-clamp: 2;
+		-moz-line-clamp: 2;
+		-o-line-clamp: 2;
+		-ms-line-clamp: 2;
+		line-clamp: 2;
+	}
+	.information_list a span em{
+		display: none;
+	}
+	.arrondis_advanced_box a:nth-child(3n){
+		margin-right: 0;
+	}
+	.bounceInDown{
+		animation: bounceInDown .7s forwards;
+	}
+	.arrondis_use_box a:nth-child(3n){
+		margin: 0 0 2.95% 0;
+	}
+}
+/**ipad**/
+@media only screen and (max-width:991px) and (min-width:768px) {
+	.bounceInDown{
+		animation: bounceInDown .7s forwards;
+	}
+	.arrondis_banner,
+	.arrondis_banner .arrondis_img img{
+		height: 170px;
+	}
+	.arrondis_icon{
+		width: 85px;
+		top: 32.5px;
+	}
+	.arrondis_gamename{
+		top: 38px;
+		left: 120px;
+	}
+	.arrondis_gamename b{
+		font-size: 25px;
+    	line-height: 35px;
+	}
+	.arrondis_gamename em, 
+	.arrondis_gamename dfn{
+		font-size: 14px;
+    	line-height: 20px;
+	}
+	.arrondis_box .op_wrap,
+    .introduce_box .op_wrap {
+        width: 160px;
+    }
+	.arrondis_btn{
+		height: 36px;
+		line-height: 36px;
+		font-size: 18px;
+	}
+	.pop_introduce .introduce_box{
+		height: 140px;
+	}
+	.introduce_gamedetails p{
+		line-height: 23px;
+		font-size: 14px;
+	}
+	.information_list a{
+		height: 122px;
+	}
+	.information_list a img{
+		width: 150px;
+		margin: 24px 20px;
+	}
+	.information_list a span{
+		width: calc(100% - 210px);
+		height: 80px;
+	}
+	.information_list a span i{
+		font-size: 15px;
+		line-height: 25px;
+		display: block;
+		overflow: hidden;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+	}
+	.information_list a span em{
+		font-size: 13px;
+		color: #737373;
+		min-height: 20px;
+		max-height: 40px;
+		display: -webkit-box !important;
+		overflow: hidden;
+		-webkit-text-overflow: ellipsis;
+		-moz-text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-o-box-orient: vertical;
+		-ms-box-orient: vertical;
+		box-orient: vertical;
+		-webkit-line-clamp: 2;
+		-moz-line-clamp: 2;
+		-o-line-clamp: 2;
+		-ms-line-clamp: 2;
+		line-clamp: 2;
+	}
+	.arrondis_novice{
+		height: 170px;	
+	}
+	.arrondis_novice .arrondis_novice_box .arrondis_novice_scroll .swiper-slide a{
+		width: 170px;
+	}
+	.arrondis_use_box a{
+		width: 16.85%;
+		height: 38px;
+		line-height: 38px;
+		font-size: 14px;
+	}
+	.arrondis_advanced_box a{
+		width: 18.5%;
+		margin-right: 1.85%;
+		margin-bottom: 1.85%;
+	}
+	.arrondis_use_box a:nth-child(4n),
+	.arrondis_advanced_box a:nth-child(5n){
+		margin-right: 0;
+	}
+	
+}
+/**windows**/
+@media only screen and (max-width:1920px) and (min-width:992px) {
+	.arrondis_banner,
+	.arrondis_banner .arrondis_img img{
+		height: 224px;
+	}
+	.arrondis_banner .arrondis_img img{
+		width: 100%;
+	}
+	.arrondis_icon{
+		width: 112px;
+		top: 56px;
+	}
+	.arrondis_gamename{
+		top: 58px;
+		left: 160px;
+	}
+	.arrondis_gamename b{
+		font-size: 32px;
+    	line-height: 45px;
+    	font-weight: 500;
+	}
+	.arrondis_gamename em, 
+	.arrondis_gamename dfn{
+		font-size: 18px;
+    	line-height: 30px;
+	}
+	.arrondis_box .op_wrap,
+    .introduce_box .op_wrap {
+        width: 200px;
+    }
+	.arrondis_btn{
+		height: 46px;
+		line-height: 46px;
+		font-size: 18px;
+		transition: all .3s;
+	}
+	.arrondis_btn + .arrondis_btn {
+        margin-top: 24px;
+    }
+	.arrondis_btn:hover{
+		transform: scale(.95);
+	}
+	.introduce_arrow{
+		display: none;
+	}
+	.features_title{
+		color: #000;
+		font-size: 24px;
+		line-height: 68px;
+		display: block;
+		width: calc(100% - 100px);
+		margin: 0 auto;
+	}
+	.pop_introduce{
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.bounceInDown{
+		animation: fadeIn .7s forwards;
+	}
+	.introduce_close{
+		width: 50px;
+		height: 50px;
+		background: #fff;
+		top: -70px;
+		right: 0;
+		text-indent: -999em;
+		display: block;
+	}
+	.introduce_close::before{
+		content: '';
+		width: 18px;
+		height: 18px;
+		background: url(../images/icon_close.png) no-repeat;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin: -9px 0 0 -9px;
+		transition: all .3s;
+	}
+	.introduce_close:hover::before{
+		transform: rotate(180deg);
+	}
+	.pop_introduce{
+		padding-bottom: 58px;
+	}
+	.pop_introduce .introduce_box{
+		height: 180px;
+	}
+	.pop_introduce .arrondis_icon{
+		top: 40px;
+		left: 50px;
+	}
+	.pop_introduce .arrondis_gamename{
+		top: 43px;
+		left: 181px;
+	}
+	.introduce_box .op_wrap {
+        right: 50px;
+    }
+	.pop_introduce .arrondis_gamename dfn i{
+		color: #5338ee;
+	}
+	.pop_introduce .introduce_gamedetails{
+		width: calc(100% - 100px);
+		padding-bottom:0;
+	}
+	.pop_introduce .introduce_gamedetails p{
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.pop_introduce .introduce_features{
+		width: calc(100% - 100px);
+		height: 288px;
+		margin: 0 auto;
+	}
+	.pop_introduce .introduce_features .introduce_features_scroll .swiper-slide{
+		height: 250px;
+	}
+	.pop_introduce .introduce_features .introduce_features_scroll .swiper-slide img{
+		height: 100%;
+		margin-right: 15px;
+	}
+	.pop_introduce .swiper-scrollbar-features{
+		background: #f5f5f8;
+    	border-radius: 0;
+    	display: block;
+	}
+	.pop_introduce .swiper-container-horizontal>.swiper-scrollbar{
+		width: 100%;
+    	left: 0;
+    	height: 14px;
+	}
+	.pop_introduce .swiper-scrollbar-drag{
+		background: #cdcdcd;
+		border-radius: 0;
+	}
+	.arrondis_plate{
+		background: #fff;
+		box-shadow: 0 0 5px 5px rgba(211,211,211,.2);
+		margin: 40px auto 20px;	
+	}
+	.arrondis_plate a{
+		margin: 20px 0 20px 40px;
+	}
+	.arrondis_plate a:hover{
+		transform: scale(1.2);
+	}
+	.arrondis_tab{
+		border-bottom: 1px solid #ededed;
+	}
+	.arrondis_tab a{
+		width: 102px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 18px;
+		font-weight:500;
+		margin: 0;
+	}
+	.information_list a{
+		height: 178px;
+		position: relative;
+		transition: all .3s;
+	}
+	.information_list a:hover{
+		transform: translateX(15px);
+	}
+	.information_list a img{
+		width: 198px;
+		margin: 40px 40px 40px 0;
+	}
+	.information_list a span{
+		width: 630px;
+		height: 100px;
+	}
+	.information_list a span i{
+		font-size: 18px;
+		line-height: 30px;
+		display: block;
+		overflow: hidden;
+    	text-overflow: ellipsis;
+    	white-space: nowrap;
+	}
+	.information_list a span em{
+		font-size: 16px;
+		color: #737373;
+		min-height: 30px;
+		max-height: 60px;
+		line-height: 30px;
+		display: -webkit-box !important;
+		overflow: hidden;
+		-webkit-text-overflow: ellipsis;
+		-moz-text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		-webkit-box-orient: vertical;
+		-moz-box-orient: vertical;
+		-o-box-orient: vertical;
+		-ms-box-orient: vertical;
+		box-orient: vertical;
+		-webkit-line-clamp: 2;
+		-moz-line-clamp: 2;
+		-o-line-clamp: 2;
+		-ms-line-clamp: 2;
+		line-clamp: 2;
+	}
+	.information_list a span dfn{
+		position: absolute;
+		right: 0;
+		font-size: 16px;
+		top: 50%;
+		height: 20px;
+		line-height: 20px;
+		margin-top: -10px;
+	}
+	.arrondis_novice .arrondis_novice_title, 
+	.arrondis_use .arrondis_use_title, 
+	.arrondis_advanced .arrondis_advanced_title{
+		font-size: 24px;
+		margin-left: 0;
+		line-height: 80px;
+	}
+	.arrondis_novice{
+		height: 210px;
+		border-bottom: none;
+	}
+	.arrondis_novice .arrondis_novice_box .arrondis_novice_scroll .swiper-slide a{
+		width: 210px;
+		margin-left: 0;
+		margin-right: 20px;
+		transition: all .3s;
+	}
+	.arrondis_novice .arrondis_novice_box .arrondis_novice_scroll .swiper-slide a:nth-child(1){
+		margin-left: 0;
+	}
+	.arrondis_use_box, 
+	.arrondis_advanced_box{
+		width: 100%;
+	}
+	.arrondis_use_box a{
+		width: 11%;
+		height: 40px;
+		line-height: 40px;
+		font-size: 16px;
+		margin: 0 2% 2% 0;
+		transition: all .3s;
+	}
+	.arrondis_use_box a:hover{
+		background: #272931;
+		color: #fff;
+	}
+	.arrondis_use_box a i{
+		height: 16px;
+		line-height: 16px;
+		font-size: 10px;
+	}
+	.arrondis_use,
+	.arrondis_advanced{
+		border-bottom: none;
+		padding-bottom: 0;
+	}
+	.arrondis_advanced_box{
+		margin-bottom: 20px;
+	}
+	.arrondis_advanced_box a{
+		width: 18.5%;
+		height: 150px;
+		margin-right: 1.85%;
+		margin-bottom: .85%;
+		transition: all .3s;
+	}
+	.arrondis_novice .arrondis_novice_box .arrondis_novice_scroll .swiper-slide a:hover,
+	.arrondis_advanced_box a:hover{
+		transform: scale(.95);
+	}
+	.arrondis_advanced_box a:nth-child(5n){
+		margin-right: 0;
+	}
+	.arrondis_advanced_box a img{
+		max-height: 115px;
+	}
+	.arrondis_advanced_box a span{
+		background: none;
+		height: 36px;
+		color: #737373;
+		font-size: 16px;
+		line-height: 36px;
+		text-indent: 0;
+	}
+	@media only screen and (min-width:1024px){
+		.arrondis_content{
+			transform: scale(.95);
+		}
+	}
+	@media only screen and (min-width:1200px){
+		.arrondis_content{
+			transform: scale(1);
+		}
+	}
+}
+.shows{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.show_prev{
+	width: 50px;
+	height: 50px;
+	background: url(../images/pop_prev.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	margin-top: -25px;
+}
+.show_next{
+	width: 50px;
+	height: 50px;
+	background: url(../images/pop_next.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	margin-top: -25px;
+}
+.mask_img .photos img{
+	animation: bounceIn 1s ease both;
+}
+@keyframes bounceIn{
+	0% {
+		opacity: 0;
+		transform: translate(-50%,-50%) scale(.3);
+	}
+	50% {
+		opacity: 1;
+		transform: translate(-50%,-50%) scale(1.05);
+	}
+	70% {
+		transform: translate(-50%,-50%) scale(.9);
+	}
+	100% {
+		transform: translate(-50%,-50%) scale(1);
+	}
+}
