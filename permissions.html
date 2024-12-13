@@ -14,10 +14,28 @@
             padding: 1em;
         }
     </style>
+    <script>
+        function toggleLayer(name) {
+            var en = document.getElementById('en');
+            var cn = document.getElementById('cn');
+            if (name === 'en') {
+                en.style.display = 'block';
+                cn.style.display = 'none';
+            } else {
+                cn.style.display = 'block';
+                en.style.display = 'none';
+            }
+        }
+    </script>
+
 </head>
 
-<body>
-    <div class="center">
+<body onload="toggleLayer('en')">
+    <div style="position: absolute;z-index: 6;top:2vw;left:90vw;">
+        <button onclick="toggleLayer('en')">English</button>
+        <button onclick="toggleLayer('zh')">中文</button>
+    </div>
+    <div id="cn" class="center">
         <div class="edit_title">
             <h3>应用权限说明</h3>
             <p class="time"><i class="icon"></i>2023-09-26</p>
@@ -25,31 +43,69 @@
         <div class="edit">
             <div>设备信息权限</div>
     
-                <div>收集设备信息，用于识别账号异常状态，了解产品适配性，维护基础功能的正常运行，实现本游戏的问题排查</div>
+            <div>收集设备信息，用于识别账号异常状态，了解产品适配性，维护基础功能的正常运行，实现本游戏的问题排查。</div>
+            
+            <div>&nbsp;</div>
+            
+            <div>存储权限</div>
+            
+            <div>用于使应用程序在运行时对游戏资源进行必要的缓存和读取。</div>
+            
+            <div>&nbsp;</div>
+            
+            <div>地理位置权限</div>
+            
+            <div>获取地理位置信息，用于寻找附近的游戏玩家，以便与附近的玩家匹配、组队等。</div>
+            
+            <div>&nbsp;</div>
+            
+            <div>相机权限</div>
+            
+            <div>iOS 设备还可能获取相册权限、照片权限收集图片信息（个人信息），用以提供空间图像展示个性化服务。</div>
+            
+            <div>&nbsp;</div>
+            
+            <div>麦克风权限</div>
+            
+            <div>收集语音信息（个人信息），用以提供语音形式的社交功能服务。</div>
+            
+            <div>&nbsp;</div>
+        </div>
+    </div>
+
+    <div id="en" class="center">
+        <div class="edit_title">
+            <h3>Application Permissions Description</h3>
+            <p class="time"><i class="icon"></i>2023-09-26</p>
+        </div>
+        <div class="edit">
+            <div>Device information permissions</div>
+    
+                <div>Collect device information to identify abnormal account status, understand product adaptability, maintain the normal operation of basic functions, and troubleshoot problems in this game.</div>
                 
                 <div>&nbsp;</div>
                 
-                <div>存储权限</div>
+                <div>Storage permissions</div>
                 
-                <div>用于使应用程序在运行时对游戏资源进行必要的缓存和读取</div>
-                
-                <div>&nbsp;</div>
-                
-                <div>地理位置权限</div>
-                
-                <div>获取地理位置信息，用于寻找附近的游戏玩家，以便与附近的玩家匹配、组队等</div>
+                <div>Used to enable the application to perform necessary caching and reading of game resources during runtime.</div>
                 
                 <div>&nbsp;</div>
                 
-                <div>相机权限</div>
+                <div>Geolocation permissions</div>
                 
-                <div>iOS 设备还可能获取相册权限、照片权限收集图片信息（个人信息），用以提供空间图像展示个性化服务</div>
+                <div>Obtain geographical location information to find nearby game players to match, form teams with nearby players, etc.</div>
                 
                 <div>&nbsp;</div>
                 
-                <div>麦克风权限</div>
+                <div>Camera permissions</div>
                 
-                <div>收集语音信息（个人信息），用以提供语音形式的社交功能服务</div>
+                <div>iOS devices may also obtain album permissions and photo permissions to collect picture information (personal information) to provide personalized spatial image display services.</div>
+                
+                <div>&nbsp;</div>
+                
+                <div>Microphone permissions</div>
+                
+                <div>Collect voice information (personal information) to provide social function services in the form of voice.</div>
                 
                 <div>&nbsp;</div>
         </div>

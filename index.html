@@ -5,9 +5,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <meta name="robots" content="all">
-    <title>火翼工作室</title>
-    <meta name="Description" content="《古域道影》是全新竖屏黑神话冒险手游,历经三年打磨,只为带来纯粹、感动和轻松的冒险体验。">
-    <meta name="Keywords" content="古域道影,黑神话,Roguelike,古域冒险,道影再临,启·David,启·大卫,潘·Irene,潘·伊琳娜,火翼工作室">
+    <title>Firewings Studio</title>
+    <!-- <meta name="Description" content="《古域道影》是全新竖屏黑神话冒险手游,历经三年打磨,只为带来纯粹、感动和轻松的冒险体验。"> -->
+    <meta name="Description" content="'Ancient Domain Tao Shadow' is a new vertical screen dark myth adventure mobile game. It has been polished for three years just to bring a pure, touching and relaxing adventure experience.">
+    <!-- <meta name="Keywords" content="古域道影,黑神话,Roguelike,古域冒险,道影再临,启·David,启·大卫,潘·Irene,潘·伊琳娜,火翼工作室"> -->
+    <meta name="Keywords" content="Ancient Domain Tao Shadow, Black Myth, Roguelike, Ancient Domain Adventure, Tao Shadow Returns, Qi·David, Pan·Irene, Firewings Studio">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,9 +19,35 @@
     <link rel="icon" href="./res/favicon.ico">
     <link rel="stylesheet" href="./res/p_base.css">
     <link href="./res/home_index_pc_v2.css" rel="stylesheet">
+    <script>
+        function toggleLayer(name) {
+            var en = document.getElementById('en');
+            var cn = document.getElementById('cn');
+            if (name === 'en') {
+                en.style.display = 'block';
+                cn.style.display = 'none';
+               
+            } else {
+                cn.style.display = 'block';
+                en.style.display = 'none';
+
+            }
+            var footer_en = document.getElementById('footer_en');
+            var footer_cn = document.getElementById('footer_cn');
+            if (name === 'en') {
+                footer_en.style.display = 'block';
+                footer_cn.style.display = 'none';
+               
+            } else {
+                footer_cn.style.display = 'block';
+                footer_en.style.display = 'none';
+
+            }
+        }
+    </script>
 </head>
 
-<body id="homePage" data="prod">
+<body id="homePage" data="prod" onload="toggleLayer('en')">
     <div class="wrapper">
         <!--[if lt IE 10]>
         <div style="position:relative;width:100%;height:50px;background:red;color:#fff;border-bottom:1px
@@ -83,7 +111,7 @@
                 <div class="bg-wrap">
                     <img src="./res/bg_1920_1080.png"><img src="./res/bg_1920_1200.jpg">
                 </div>
-                <div class="sub-page-con" style="width: 100%;color: #ffffff;">
+                <div id= "en" class="sub-page-con" style="width: 100%;color: #ffffff;">
                     <div class="page news-page" id="newsPage">
                         <h2 class="title">
                             <!-- <img src="./res/17113585789895269321482.png"> -->
@@ -94,8 +122,8 @@
                                     Welcome, we are a cool
                                 </div>
                                 <div style="font-size: 8.5vw;">
-                                    Firewings<br>
-                                    Game<br>
+                                    Firewings<br/>
+                                    Game<br/>
                                     Studio
                                 </div>
                             </div>
@@ -119,7 +147,7 @@
                                         AncientTaoShadow
                                     </div>
                                     <div style="line-height:2.38vw;font-size: 2.28vw;color: #ffffffad;">
-                                        Ancient Domain Daoying Shenxing, Rogue upgrade to fight Guai.
+                                        Ancient Domain Tao Shadow God Travel, Rogue upgrade to fight Guai.
                                         A fun and exciting multi-character long-distance adventure!
                                     </div>
                                 </div>
@@ -137,6 +165,84 @@
                                     <div style="line-height:2.38vw;font-size: 2.28vw;color: #ffffffad;">
                                         Suddenly the golden rope was opened and the jade lock was torn off.
                                         Hey! The tide came from the Qiantang River, and today I know who I am.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="height: 50vw;"></div>
+                    <div class="page player-page" id="playerPage">
+                        <div class="server-wrap">
+                            <ul id="fp_ServerList" class="server-list">
+                                <li class="item">
+                                    <img src="./res/share_ins.png">
+                                </li>
+                                <li class="item">
+                                    <img src="./res/share_fb.png">
+                                </li>
+                                <li class="item">
+                                    <img src="./res/share_x.png">
+                                </li>
+                                <li class="item">
+                                    <img src="./res/share_yt.png">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id= "cn"  class="sub-page-con" style="width: 100%;color: #ffffff;">
+                    <div class="page news-page" id="newsPage">
+                        <h2 class="title">
+                            <!-- <img src="./res/17113585789895269321482.png"> -->
+                        </h2>
+                        <div class="news-page-con">
+                            <div style="width: 100%;align-content: start;padding-left: 0.5rem;">
+                                <div style="font-size: 1.85vw;">
+                                    欢迎光临，我们是创意酷酷的<br/><br/>
+                                </div>
+                                <div style="font-size: 8.5vw;">
+                                    
+                                    火  翼<br/>
+                                    工 作 室<br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page feature-page" id="featurePage">
+                        <h2 class="title" style="font-size: 4.25vw;">
+                            <!-- <img src="./res/17113585929895269321918.png"> -->
+                            游戏项目
+                        </h2>
+                        <div id="LT_age" class="LT-age" style="top:11.66rem;left:15.58rem;"><a href="./thetao"><img src="./res/17113583449895269324511.png"
+                            style="width:1.6rem;"></a></div>
+                        <div id="fpSwiper" class="swiper-wrap type2" style="place-items: center;color: #ffffff;">
+                            <div style="width: 70vw;height: 35vw;background-size: cover;background-image: url('./res/cover.jpg');display: flex;align-items: flex-end;">
+                                <div style="padding: 20px;">
+                                    <div style="line-height:2.1vw;font-size: 2vw;color: #fd307a;">
+                                        肉鸽游戏即将上线
+                                    </div>
+                                    <div style="line-height:4.8vw;font-size: 4.7vw;">
+                                        古 域 道 影
+                                    </div>
+                                    <div style="line-height:2vw;font-size: 1.3vw;color: #ffffffad;">
+                                        古域道影神行 肉鸽升级打怪！
+                                        探索各个神话体系真相，武器融合弹幕狂潮的射击游戏！<br>
+                                        畅快淋漓的多角色长途冒险之旅！ ！
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="height: 20px;"></div>
+                            <div style="width: 70vw;height: 35vw;background-size: cover;background-image: url('./res/cover_ruda.jpg');display: flex;align-items: flex-end;">
+                                <div style="padding: 20px;">
+                                    <div style="line-height:2.1vw;font-size: 2vw;color: #fd307a;">
+                                        PC ARPG 游戏正在开发中
+                                    </div>
+                                    <div style="line-height:4.8vw;font-size: 4.7vw;">
+                                        古 域 道 影-鲁 达
+                                    </div>
+                                    <div style="line-height:2vw;font-size: 1.3vw;color: #ffffffad;">
+                                        忽地顿开金绳，这里扯断玉锁！<br/>
+                                        咦！钱塘江上潮信来，今日方知我是我！
                                     </div>
                                 </div>
                             </div>
@@ -558,11 +664,39 @@
                     max-width: 200px
                 }
             </style>
-            <div class="LT-footer dark">
+            <div id="footer_en" class="LT-footer dark">
                 <div class="f-wrap" style="padding: 10px;">
                     <div class="f-top">
                         <div class="f-t-l"><a class="f-item" target="_blank" href="https://firewingstudio.github.io/">
                                 <img src="./res/lt_logo_w.png" alt="火翼工作室"> </a>
+                        </div>
+                        <nav class="f-t-r">
+                            <a class="f-a" target="_blank"
+                                href="https://firewingstudio.github.io/privacy-policy.html">Privacy Policy</a>
+                            <a class="f-a" target="_blank"
+                                href="https://firewingstudio.github.io/license-ua.html">User Agreement</a>
+                            <a class="f-a" target="_blank"
+                                href="https://firewingstudio.github.io/anti-addiction.html">Anti-addiction</a>
+                            <a class="f-a" target="_blank"
+                                href="https://firewingstudio.github.io/permissions.html">App Permissions</a>
+                        </nav>
+                    </div>
+                    <div class="f-center">
+                        <p class="f-rich-text">Email address for reporting illegal and harmful information : leezongke@gmail.com |
+                            Hotline for reporting illegal and harmful information :+86-18611150820 | Special mailbox for minors : leezongke@gmail.com
+                        </p>
+                    </div>
+                    <div class="f-bottom">
+                        <p class="f-p"><a class="f-a">Copyright© 2022-2024</a><a class="f-a" target="_blank"
+                                href="https://firewingstudio.github.io/">Firewings Studio</a></p>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_cn" class="LT-footer dark">
+                <div class="f-wrap" style="padding: 10px;">
+                    <div class="f-top">
+                        <div class="f-t-l"><a class="f-item" target="_blank" href="https://firewingstudio.github.io/">
+                                <img src="./res/lt_logo_w_cn.png" alt="火翼工作室"> </a>
                         </div>
                         <nav class="f-t-r">
                             <a class="f-a" target="_blank"
@@ -603,6 +737,11 @@
 
         <div id="LT_age" class="LT-age" style="top:0.3rem;left:0.3rem;"><img src="./res/lt_logo_w.png"
                 style="width:2rem;"></div>
+    </div>
+    <div style="position: absolute;z-index: 6;top:2vw;left:90vw;">
+        <a style="color: #a5a5a5;" onclick="toggleLayer('en')">English</button>
+        <a style="color: #a5a5a5;" onclick="toggleLayer('ch')">中文</button>
+    </div>
 </body>
 
 </html>

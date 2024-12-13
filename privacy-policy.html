@@ -12,9 +12,81 @@
       padding: 1em;
     }
   </style>
+  <script>
+    function toggleLayer(name) {
+        var en = document.getElementById('en');
+        var cn = document.getElementById('cn');
+        if (name === 'en') {
+            en.style.display = 'block';
+            cn.style.display = 'none';
+        } else {
+            cn.style.display = 'block';
+            en.style.display = 'none';
+        }
+    }
+  </script>
 </head>
 
-<body>
+<body onload="toggleLayer('en')">
+    <div style="position: absolute;z-index: 6;top:2vw;left:90vw;">
+        <button onclick="toggleLayer('en')">English</button>
+        <button onclick="toggleLayer('zh')">中文</button>
+    </div>
+<div id="cn" class="center">
+  <strong>隐私政策</strong>
+  <p>本隐私政策适用于由 RongTao（以下简称“服务提供商”）开发的 AncientDomainTaoShadow 移动设备应用程序（以下简称“应用程序”），该应用程序作为广告支持服务。此服务按“原样”提供。</p><br><strong>应用程序获取哪些信息，以及这些信息如何使用？</strong><br><strong>用户提供的信息</strong>
+  <p>应用程序获取您在下载并注册应用程序时提供的信息。与服务提供商的注册并非强制性的。然而，请记住，除非您注册，否则可能无法使用应用程序提供的某些功能。</p>
+  <p>服务提供商也可能使用您提供的信息不时地与您联系，以向您提供重要信息、必要通知和营销促销活动。</p><br><strong>自动收集的信息</strong>
+  <p>此外，应用程序可能会自动收集某些信息，包括但不限于您使用的移动设备类型、您的移动设备唯一设备ID、您移动设备的IP地址、您的移动操作系统、您使用的移动互联网浏览器类型以及您使用应用程序的方式。</p><br><strong>应用程序是否收集设备的精确实时位置信息？</strong>
+  <p>该应用程序不会收集您移动设备的精确位置信息。</p>
+  <div style="display: none;">
+    <p>该应用程序会收集您设备的位置，帮助服务提供商确定您大致的地理位置，并在以下方式中使用该信息：</p>
+    <ul>
+      <li>位置服务：服务提供商利用位置信息提供个性化内容、相关推荐和基于位置的服务等功能。</li>
+      <li>分析和改进：汇总和匿名的位置数据可帮助服务提供商分析用户行为、识别趋势并提高应用程序的整体性能和功能。</li>
+      <li>第三方服务：服务提供商可能会定期将匿名位置数据传输给外部服务。这些服务可帮助他们增强应用程序并优化其产品。</li>
+    </ul>
+  </div><br><strong>第三方是否可以查看或访问应用程序获取的信息？</strong>
+  <p>只有汇总的匿名数据会定期传输到外部服务，以帮助服务提供商改进应用程序及其服务。服务提供商可能会按照本隐私声明中描述的方式与第三方共享您的信息。</p>
+  <div><br>
+    <p>请注意，本应用程序使用第三方服务，这些服务有自己的数据处理隐私政策。以下是本应用程序使用的第三方服务提供商的隐私政策链接：</p>
+    <ul>
+      <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play
+服务</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank"
+          rel="noopener noreferrer">移动电话广告市场</a></li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase 版 Google Analytics</a></li>
+      <li><a href="https://firebase.google.com/support/privacy/" target="_blank" rel="noopener noreferrer">Firebase
+          Crashlytics</a></li>
+      <li><a href="https://www.facebook.com/about/privacy/update/printable" target="_blank"
+          rel="noopener noreferrer">脸书</a></li>
+      <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
+    </ul>
+  </div>
+  <p>服务提供商可能会披露用户提供的信息和自动收集的信息：</p>
+  <ul>
+    <li>按照法律要求，例如遵守传票或类似的法律程序；</li>
+    <li>当他们真诚地相信披露对于保护他们的权利、保护您或他人的安全、调查欺诈或响应政府要求是必要的时；</li>
+    <li>与代表他们工作的可信赖的服务提供商共享信息，不得独立使用我们向他们披露的信息，并同意遵守本隐私声明中规定的规则。</li>
+  </ul>
+  <p></p><br><strong>退出权</strong>
+  <p>您可以通过卸载应用程序轻松停止应用程序的所有信息收集。您可以使用移动设备中提供的标准卸载流程，或通过移动应用程序市场或网络卸载。</p><br><strong>数据保留政策，管理您的信息</strong>
+  <p>只要您使用应用程序，服务提供商就会保留用户提供的数据，并在此后的合理时间内保留。服务提供商将保留自动收集的信息长达 24 个月，此后可能会将其存储为汇总信息。如果您希望服务提供商删除您通过应用程序提供的用户提供的数据，请通过 firewings.venture@gmail.com 与他们联系，我们将在合理的时间内回复。请注意，应用程序可能需要部分或全部用户提供的数据才能正常运行。</p><br><strong>未成年</strong>
+  <p>服务提供商不会使用该应用程序故意向 13 岁以下的儿童索取数据或向其推销产品。</p>
+  <div><br>
+    <p>本应用程序不针对 13 岁以下的任何人。
+服务提供商不会故意收集 13 岁以下儿童的个人身份信息。如果服务提供商发现 13 岁以下的儿童提供了个人信息，服务提供商将立即从其服务器中删除这些信息。如果您是父母或监护人，并且您知道您的孩子向我们提供了个人信息，请联系服务提供商 (firewings.venture@gmail.com)，以便他们能够采取必要的措施。</p>
+  </div><!----><br><strong>安全</strong>
+  <p>服务提供商关心如何保护您的信息的机密性。服务提供商提供物理、电子和程序保护措施来保护我们处理和维护的信息。例如，我们将这些信息的访问权限限制在需要了解这些信息才能操作、开发或改进其应用程序的授权员工和承包商。请注意，尽管我们努力为我们处理和维护的信息提供合理的安全保障，但没有安全系统可以防止所有潜在的安全漏洞。</p><br><strong>更改</strong>
+  <p>本隐私政策可能因任何原因不时更新。服务提供商将通过更新此页面以新的隐私政策来通知您隐私政策的任何变更。建议您定期查阅本隐私政策以了解任何变更，因为继续使用即视为同意所有变更。</p><br>
+  <p>本隐私政策自 2024-10-15 起生效</p><br><strong>您的同意</strong>
+  <p>通过使用应用程序，您即同意服务提供商按照本隐私政策现在和我们修订的规定处理您的信息。“处理”是指在计算机/手持设备上使用 cookie 或以任何方式使用或接触信息，包括但不限于收集、存储、删除、使用、合并和披露信息。</p><br><strong>联系我们</strong>
+  <p>如果您在使用应用程序时对隐私有任何疑问，或对做法有疑问，
+请通过电子邮件 firewings.venture@gmail.com 联系服务提供商。</p>
+  <hr>
+</div>
+
+<div id="en" class="center">
   <strong>Privacy Policy</strong>
   <p>This privacy policy is applicable to the AncientDomainTaoShadow app (hereinafter referred to as "Application") for
     mobile devices, which was developed by RongTao (hereinafter referred to as "Service Provider") as a an Ad Supported
@@ -112,6 +184,8 @@
   <p>If you have any questions regarding privacy while using the Application, or have questions about the practices,
     please contact the Service Provider via email at firewings.venture@gmail.com.</p>
   <hr>
+</div>
+
 </body>
 
 </html>
