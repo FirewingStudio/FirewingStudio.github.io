@@ -28,13 +28,13 @@ var d_share = [
 var d_download = [
     {
         "type": "download",
-        "href": "https://apps.apple.com/us/app/google-maps/id585027354",
+        "href": "https://apps.apple.com/us/app/google-chrome/id535886823",
         "imgSrc": "",
         "modalImgSrc": ""
     },
     {
         "type": "download",
-        "href": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
+        "href": "https://play.google.com/store/apps/details?id=io.github.firewingstudio.taoshadow",
         "imgSrc": "",
         "modalImgSrc": ""
     }

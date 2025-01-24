@@ -1,11 +1,17 @@
 {"code":0,"data":{"announcements":[{
     "announcementId": "tao_anno_01",
     "content": "On the journey of searching for Pan, he encountered a beam of colorful light.\nThe moment the magic weapon flew towards him, he grew up a little.\nHe wore a flowing cloud robe, held the Bagua mirror, and embarked on a new journey full of challenges.\n\nQi·David\n\nvowed to explore the truth hidden in the depths of the ancient domain and let his name shine in the legend.",
+    "content1": "在尋找潘的旅途中，他遇到了一束七彩光芒。\n法寶飛向他的瞬間，他一點點長大。\n他穿著流雲長袍，手握八卦鏡，踏上了新的征程充滿挑戰的旅程。\n\n啟·David\n\n發誓要探索隱藏在古域深處的真相，讓自己的名字在傳奇中閃耀。",
+    "content3": "판을 찾아 여행을 떠나던 중, 그는 화려한 빛줄기를 만났습니다.\n마법의 무기가 그를 향해 날아오는 순간, 그는 조금 성장했습니다.\n그는 흐르는 구름 옷을 입고, 바구아 거울을 들고, 도전으로 가득 찬 새로운 여행을 시작했습니다.\n\nQi·David\n\n고대 영토의 깊은 곳에 숨겨진 진실을 탐구하고 전설 속에서 자신의 이름을 빛나게 하겠다고 다짐했습니다.",
+    "content4": "パンを探す旅の途中で、彼は色とりどりの光線に遭遇しました。\n魔法の武器が彼に向かって飛んできた瞬間、彼は少し成長しました。\n彼は流れる雲のローブを着て、八卦鏡を持ち、挑戦に満ちた新しい旅に乗り出しました。\n\n啟·David\n\n古代の領域の奥深くに隠された真実を探り、伝説の中で彼の名前を輝かせることを誓いました。",
     "effectiveAt": "2024-12-01",
     "effectiveTimestamp": 1732982400,
     "expireAt": "2025-07-01",
     "expireTimestamp": 1751299200,
     "isNew": true,
     "readed": false,
-    "title": "Actor's background story"
+    "title": "Actor's background story",
+    "title1": "男主背景故事",
+    "title3": "주인공의 배경 스토리",
+    "title4": "主人公の背景"
 }]}}
