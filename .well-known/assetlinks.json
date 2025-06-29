@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.firewingstudio.taoshadow",
+      "sha256_cert_fingerprints": [
+        "D6:81:5A:7F:48:7F:69:05:CF:E2:53:E9:A4:EC:E5:A2:37:C0:B7:1C:C1:B4:7F:3F:5F:5E:DE:24:D6:1C:8F:F3"
+      ]
+    }
+  }
+]
