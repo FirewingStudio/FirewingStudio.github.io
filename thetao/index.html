@@ -48,10 +48,6 @@
 </head>
 
 <body id="homePage" data="prod" onload="toggleLayer('en')">
-    <div style="position: absolute;z-index: 6;top:2vw;left:90vw;">
-        <a style="color: #a5a5a5;" onclick="toggleLayer('en')">English</button>
-        <a style="color: #a5a5a5;" onclick="toggleLayer('ch')">中文</button>
-    </div>
     <div class="hide">
         <h1>古域道影-全新竖屏神话黑肉鸽手游</h1>
         <div id="share_title" data="分享标题">古域道影-全新竖屏神话肉鸽手游</div>
@@ -951,8 +947,12 @@
                 var t = $(this).index()
                     , e = ""
                     , n = $(this).attr("data");
-                "type1" === n && (e = i.config.btn.bigList[t]),
-                "href" === (e = "type2" === n ? i.config.btn.smallList[t] : e).type && window.open(e.href),
+                "type1" === n && (e = i.config.btn.bigList[t])
+                if (e.href === "") {
+                    document.getElementById('donateModal').style.display = 'block';
+                    return;
+                }
+                "href" === (e = "type2" === n ? i.config.btn.smallList[t] : e).type && window.open(e.href)
                 // "image" === e.type && o(e.modalImgSrc),
                 "download" === e.type && (window.location.href = e.href) // download(e.href),
                 // "appoint" === e.type && g()
@@ -1438,6 +1438,53 @@
                     src="./moban_files/age.png" style="width:0.65rem;"> </a></div>
     </div>
 
+    <div style="position: absolute;z-index: 6;top:2vw;left:90vw;">
+        <a style="color: #a5a5a5;" onclick="toggleLayer('en')">English</button>
+        <a style="color: #a5a5a5;" onclick="toggleLayer('ch')">中文</button>
+    </div>
+
+    <style>
+        #donateModal {
+            display: none; /* 默认隐藏 */
+            position: fixed; /* 固定位置 */
+            z-index: 1; /* 置于顶层 */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: auto; /* 宽度 */
+            height: auto; /* 高度 */
+            overflow: auto; /* 如果需要滚动条 */
+            background-color: rgba(0,0,0,0.7); /* 背景颜色，带透明度 */
+            padding: 1vw;
+            line-height: 1.2;
+            font-size: small;
+            min-height: 330px;
+        }
+    </style>
+
+    <script>
+        function closeModal() {
+            document.getElementById('donateModal').style.display = 'none';
+        }
+    </script>
+
+    <div id="donateModal" style="display:none;">
+        <!-- 捐赠页面的内容 -->
+        <h2>Donate for iOS</h2>
+        <br/>
+        <p><b>Support Firewings Game Studio</b></p>
+        <p><b>Ancient Domain Tao Shadow</b> is now live on <b>Google Play!</b></p>
+        <p>The iOS version is currently in development and coming soon.</p>
+        <p>🔥 Support us by playing, sharing, or sponsoring.</p>
+        <br/>
+        <!-- 例如，支付宝、微信支付二维码 -->
+        <p>Alipay</p>
+        <img src="./moban_files/alipay_qr.png" alt="支付宝捐赠">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="./moban_files/wechatpay_qr.png" alt="微信捐赠">
+        <div style="display: flex; justify-content: flex-end; margin-top: -212px;"><p>WeChatPay</p></div>
+        <button style="position: absolute;top:2vw;right:1vw;" onclick="closeModal()">X</button>
+    </div>
 </body>
 
 </html>

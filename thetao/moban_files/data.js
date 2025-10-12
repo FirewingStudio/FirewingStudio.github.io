@@ -8,7 +8,7 @@ var d_share = [
     {
         "type": "href",
         "imgSrc": "",
-        "href": "https://www.facebook.com/profile.php?id=61566609436483",
+        "href": "https://www.facebook.com/profile.php?id=61580814920010",
         "modalImgSrc": ""
     },
     {
@@ -28,7 +28,8 @@ var d_share = [
 var d_download = [
     {
         "type": "download",
-        "href": "https://apps.apple.com/us/app/google-chrome/id535886823",
+        // "href": "https://apps.apple.com/us/app/google-chrome/id535886823",
+        "href": "",
         "imgSrc": "",
         "modalImgSrc": ""
     },
