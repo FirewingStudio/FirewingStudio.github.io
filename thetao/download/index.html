@@ -28,9 +28,9 @@
         </div>
     </div>
     <script>
-        var download1 = { "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps", "type": "android", "id": "", "bg": "", "tips": 1 };
+        var download1 = { "url": "https://play.google.com/store/apps/details?id=io.github.firewingstudio.taoshadow", "type": "android", "id": "", "bg": "", "tips": 1 };
 
-        var download2 = { "url": "https://apps.apple.com/us/app/google-maps/id585027354", "type": "ios", "id": "", "bg": "", "tips": 2 };
+        var download2 = { "url": "", "type": "ios", "id": "", "bg": "", "tips": 2 };
     </script>
 
     <script type="text/javascript">
@@ -81,6 +81,13 @@
                     window.location.href = download1.url;
                 } else if (u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
                     console.log("IOS");
+                    if (download2.url === "") {
+                        document.getElementById('donateModal').style.display = 'block';
+                        if (window.outerWidth >= 450) {
+                            document.getElementById('donateModal').style.minWidth = '410px';
+                        }
+                        return;
+                    }
                     window.location.href = download2.url;
                 }
             }
@@ -101,6 +108,49 @@
         weixin_jssdk_ops.init(share_opts);
     </script> -->
 
+    <style>
+        #donateModal {
+            display: none; /* 默认隐藏 */
+            position: fixed; /* 固定位置 */
+            z-index: 1; /* 置于顶层 */
+            left: 50%;
+            top: 45%;
+            transform: translate(-50%, -50%);
+            width: auto; /* 宽度 */
+            height: auto; /* 高度 */
+            overflow: auto; /* 如果需要滚动条 */
+            background-color: rgba(0,0,0,0.7); /* 背景颜色，带透明度 */
+            padding: 1vw;
+            line-height: 1.2;
+            font-size: small;
+            min-height: 330px;
+            color: #c7c7c8;
+        }
+    </style>
+
+    <script>
+        function closeModal() {
+            document.getElementById('donateModal').style.display = 'none';
+        }
+    </script>
+
+    <div id="donateModal" style="display:none;">
+        <!-- 捐赠页面的内容 -->
+        <h2>Donate for iOS</h2>
+        <br/>
+        <p><b>Support Firewings Game Studio</b></p>
+        <p><b>Ancient Domain Tao Shadow</b> is now live on <b>Google Play!</b></p>
+        <p>The iOS version is currently in development and coming soon.</p>
+        <p>🔥 Support us by playing, sharing, or sponsoring.</p>
+        <br/>
+        <!-- 例如，支付宝、微信支付二维码 -->
+        <p>Alipay</p>
+        <img src="../moban_files/alipay_qr.png" alt="支付宝捐赠">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <img src="../moban_files/wechatpay_qr.png" alt="微信捐赠">
+        <div style="display: flex; justify-content: flex-end; margin-top: -212px;"><p>WeChatPay</p></div>
+        <button style="position: absolute;top:2vw;right:1vw;" onclick="closeModal()">CLOSE</button>
+    </div>
 
 
 </body>

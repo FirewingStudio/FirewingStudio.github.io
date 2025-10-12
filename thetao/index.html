@@ -950,6 +950,9 @@
                 "type1" === n && (e = i.config.btn.bigList[t])
                 if (e.href === "") {
                     document.getElementById('donateModal').style.display = 'block';
+                    if (window.outerWidth >= 450) {
+                        document.getElementById('donateModal').style.minWidth = '410px';
+                    }
                     return;
                 }
                 "href" === (e = "type2" === n ? i.config.btn.smallList[t] : e).type && window.open(e.href)
@@ -1449,7 +1452,7 @@
             position: fixed; /* 固定位置 */
             z-index: 1; /* 置于顶层 */
             left: 50%;
-            top: 50%;
+            top: 45%;
             transform: translate(-50%, -50%);
             width: auto; /* 宽度 */
             height: auto; /* 高度 */
@@ -1483,7 +1486,7 @@
         &nbsp;&nbsp;&nbsp;&nbsp;
         <img src="./moban_files/wechatpay_qr.png" alt="微信捐赠">
         <div style="display: flex; justify-content: flex-end; margin-top: -212px;"><p>WeChatPay</p></div>
-        <button style="position: absolute;top:2vw;right:1vw;" onclick="closeModal()">X</button>
+        <button style="position: absolute;top:2vw;right:1vw;" onclick="closeModal()">CLOSE</button>
     </div>
 </body>
 
