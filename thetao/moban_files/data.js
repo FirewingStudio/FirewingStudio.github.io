@@ -2,13 +2,13 @@ var d_share = [
     {
         "type": "href",
         "imgSrc": "",
-        "href": "https://www.instagram.com/firewings.venture/",
+        "href": "https://www.instagram.com/firewings.game/",
         "modalImgSrc": ""
     },
     {
         "type": "href",
         "imgSrc": "",
-        "href": "https://www.facebook.com/profile.php?id=61580814920010",
+        "href": "https://www.facebook.com/profile.php?id=61582425801338",
         "modalImgSrc": ""
     },
     {
