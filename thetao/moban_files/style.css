@@ -2388,6 +2388,7 @@ img {
 }
 
 .transfer {
+    /* position: relative; */
     height: max-content;
     min-height: 100%;
     background: #2b6046;

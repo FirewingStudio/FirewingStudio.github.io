@@ -23,6 +23,7 @@
 <body>
     <div class="warp">
         <div class="transfer">
+            <!-- style="position: absolute; top:10%; z-index: 1;" -->
             <img class="download-tips hid" src="../moban_files/transfer_ios.png" alt="">
             <img class="download-bg" src="../moban_files/down-en.m.jpg" alt="">
         </div>
@@ -35,6 +36,9 @@
 
     <script type="text/javascript">
         var ua = window.navigator.userAgent.toLowerCase();
+        function iOS() {
+            return navigator.userAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
+        }
         function isWeiXin() {
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 return true;
@@ -61,16 +65,16 @@
             //     }
             // });
 
-            if (isWeibo()) {
+            if (isWeibo() && iOS() === null) {
                 //微博访问，提示用外部浏览器打开
                 $('.download-tips').removeClass('hid');
             }
 
-            if (isWeiXin() && download.tips == 1) {
+            if (isWeiXin() && iOS() === null) {
                 //微信访问且下载地址是apk，提示用外部浏览器打开
                 $('.download-tips').removeClass('hid');
             } else {
-                $('.download-bg').removeClass('hid');
+                // $('.download-bg').removeClass('hid');
 
                 //非微信访问，直接推送地址
                 // window.location.href = download.url;
@@ -80,7 +84,7 @@
                     console.log("Android");
                     window.location.href = download1.url;
                 } else if (u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/)) {
-                    console.log("IOS");
+                    console.log("iOS");
                     if (download2.url === "") {
                         document.getElementById('donateModal').style.display = 'block';
                         if (window.outerWidth >= 450) {
